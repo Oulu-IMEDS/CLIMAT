@@ -1,0 +1,16 @@
+defaults:
+  - config: seq_multi_prog_climat
+  - data: img:1_meta:0kl
+
+dataset: oai
+use_y0_class_weights: False
+use_pn_class_weights: False
+multi_class_mode: ovo
+y0_init_power: 0.0
+pn_init_power: 0.1
+use_only_baseline: False
+model_selection_mode: avg
+use_pn_reg: False
+predict_current_KL: True
+loss_name: CE
+save_attn: False

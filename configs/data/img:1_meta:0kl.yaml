@@ -1,0 +1,14 @@
+parser:
+  grading: ${grading}
+  prognosis: prognosis_${grading}
+  prognosis_mask: prognosis_mask_${grading}
+  progs: progs_${grading}
+  progs_mask: progs_mask_${grading}
+  metadata:
+    - IMG
+    - AGE
+    - SEX
+    - INJ
+    - SURG
+    - BMI
+    - WOMAC

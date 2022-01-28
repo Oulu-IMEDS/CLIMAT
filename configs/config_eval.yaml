@@ -1,0 +1,25 @@
+defaults:
+  - config: seq_multi_prog_climat
+  - data: img:1_meta:0kl
+eval:
+  root:
+  output:
+  patterns:
+  n_resamplings: 1
+
+dataset: oai
+use_y0_class_weights: False
+use_pr_class_weights: False
+use_pn_class_weights: False
+multi_class_mode: ovo
+use_only_grading:
+use_only_baseline: True
+pn_init_power: 0.1
+pr_init_power: 1
+model_selection_mode: avg
+predict_current_KL: True
+loss_name: FL
+most_followup_meta_filename: "MOST_names.csv"
+most_meta_filename: MOST_progression_all.csv
+save_predictions: False
+save_attn: False
